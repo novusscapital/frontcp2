@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>NOVUS CAPITAL OFFICIAL SITE</title>
-    <link rel="shortcut icon" href="./src/assets/imagemtopodosite.png">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="../src/assets/novuscapital.png">
+    <link rel="stylesheet" href="../src/css/style.css">
 
 </head>
-<body>
-    <header id="header">
-        <img src="./src/assets/imagemlogodosite.png" alt="Logo do site">
-        <h1>Novus Restaurant</h1>
+<body class="body-sobre">
+    <header>
+        <img src="../src/assets/novuscapital.png" alt="Logo do site">
         <nav>
             <ul>
                 <li><a href="../index.html">HOME</a></li>
@@ -20,9 +20,13 @@
                 <li><a href="./contato.html">CONTATO</a></li>
             </ul>
         </nav>
+        <div class="user-icons">
+            <a href="#"><i class="fas fa-user"></i></a> 
+            <a href="#"><i class="fas fa-shopping-cart"></i></a> 
+        </div>
     </header>
 
-    <main class="sobre">
+    <main class="main-sobre">
         <div id="content-sobre">
             <h2>Sobre a Novus Restaurant</h2>
             <p>
@@ -35,7 +39,30 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 - Novus Capital. Todos os direitos reservados</p>
+        <div class="footer-container">
+            <div class="footer-contact">
+            <img src="../src/assets/novuscapital.png" alt="Logo Novus Capital">
+            <div>
+                <p><i class="fa fa-map-marker"></i> Rua Japão, 123 - São Paulo</p>
+                <p><i class="fa fa-envelope"></i> Contato@novusjapanesefood.com</p>
+                <p><i class="fa fa-phone"></i> (11) 1234-5678</p>
+            </div>
+            </div>
+
+            <div class="footer-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/cardapio.html">Cardápio</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-social">
+            <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>
