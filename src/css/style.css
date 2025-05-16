@@ -179,6 +179,7 @@ nav ul li a:hover {
     padding: 10px;
     margin-top: auto;
     align-self: center;
+    font-weight: 600;
     width: 100%;
 }
 .botton:hover{
@@ -189,6 +190,7 @@ nav ul li a:hover {
 }
 
 /* AVALIAÇÕES */
+
 .avaliacoes-pagina{
     border-top: 2px solid red;
     background-color: #fff;
@@ -210,28 +212,35 @@ nav ul li a:hover {
     margin-bottom: 40px;
     color: #e60000;
 }
-
-.balao-avaliacao {
-    position: relative;
-    background: #f1f1f1;
-    border-radius: 15px;
+.avaliacoes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     padding: 20px;
-    max-width: 500px;
-    margin: 20px auto;
-    text-align: left;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.balao-avaliacao {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 15px 20px;
+    border-radius: 20px;
+    max-width: 300px;
+    justify-content: center;
+    margin: 20px;
+    font-family: sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .balao-avaliacao::after {
-    content: "";
     position: absolute;
-    bottom: -20px;
-    left: 40px;
+    bottom: -15px;
+    left: 30px;
     width: 0;
     height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 20px solid #f1f1f1;
+    border: 10px solid transparent;
+    border-top-color: #f0f0f0;
 }
 
 .balao-avaliacao .autor {
