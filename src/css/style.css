@@ -323,29 +323,67 @@ nav ul li a:hover {
 /* CONTATO */
 
 .main-contato {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     font-family: 'Georgia', serif;
     color: #3e2f1c;
-    text-align: center;
 }
+
 .texto-contato {
-    max-width: 800px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.8;
-    color: #2e2e2e;
     background-color: #fffefb;
     padding: 20px 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
-.texto-contato h3 {
-    font-size: 26px;
-    margin-bottom: 20px;
+
+
+/* FORMULÁRIO */
+
+.linha-formulario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.linha-formulario label {
+    width: 90px;
     font-weight: bold;
-    color: #3e2f1c;
+}
+
+.linha-formulario input,
+.linha-formulario textarea {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-contato button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-contato button:hover {
+    background-color: #b71c1c;
+}
+
+.formulario-contato {
+    background-color: #e6f4ff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* SOBRE */
