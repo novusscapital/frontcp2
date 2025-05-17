@@ -641,3 +641,76 @@ footer{
     font-size: 18px;
   }
 }
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .user-icons {
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 50px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .especialidade-content {
+    padding: 30px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .avaliacoes-lista {
+    flex-direction: column;
+  }
+
+  .cardapio-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto-menu {
+    width: 90%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+
+  .footer-links ul li {
+    justify-content: center;
+  }
+
+  .footer-social a {
+    font-size: 18px;
+  }
+
+}
