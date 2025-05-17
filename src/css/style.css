@@ -206,7 +206,6 @@ nav ul li a:hover {
     padding: 60px 20px;
     text-align: center;
 }
-
 .avaliacoes h2 {
     font-size: 2rem;
     margin-bottom: 40px;
@@ -221,6 +220,7 @@ nav ul li a:hover {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .balao-avaliacao {
     background-color: #f0f0f0;
     border: 2px solid #ccc;
@@ -232,7 +232,6 @@ nav ul li a:hover {
     font-family: sans-serif;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 .balao-avaliacao::after {
     position: absolute;
     bottom: -15px;
@@ -242,7 +241,6 @@ nav ul li a:hover {
     border: 10px solid transparent;
     border-top-color: #f0f0f0;
 }
-
 .balao-avaliacao .autor {
     display: block;
     margin-top: 10px;
@@ -250,10 +248,141 @@ nav ul li a:hover {
     color: #555;
 }
 
+/* CARDÁPIO */
+
+.content-menu{
+    text-align: center;
+    padding: 20px;
+}
+.content-menu h3{
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.content-menu img{
+    height: 160px;
+    width: 100%;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.cardapio-menu{
+    justify-content: space-around;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+#imagem-produto {
+    width: 180px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+.produto-menu{
+    width: 280px;
+    height: 460px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px 0 20px 0;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.produto-menu p{
+    color: red;
+    font-weight: 600;
+    font-size: large;
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 2.0;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.produto-menu button {
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: auto;
+    align-self: center;
+    font-weight: 600;
+    width: 100%;
+}
+.produto-menu button:hover {
+    color: red;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* CONTATO */
+
+.main-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.texto-sobre {
+    max-width: 900px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+    color: #2e2e2e;
+    background-color: #fffefb;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.texto-sobre h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+/* SOBRE */
+
+.main-sobre {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Georgia', serif;
+  color: #3e2f1c;
+  text-align: center;
+}
+.main-sobre h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.imagem-prato img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 30px auto;
+  display: block;
+}
+.texto-sobre {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+.texto-sobre p {
+  margin-bottom: 20px;
+}
+
 /* CHÃO DA PÁGINA */
 
 footer{
-    background: #e60000;
+    background: #000000;
     color: white;
     padding: 40px 20px;
     justify-content: center;
@@ -269,8 +398,9 @@ footer{
 }
 .footer-contact {
     display: flex;
-    gap: 15px;
-    max-width: 300px;
+    gap: 30px;
+    font-size: 1.5rem;
+    max-width: 500px;
     align-items: center;
     justify-content: center;
 }
@@ -283,6 +413,7 @@ footer{
     padding: 0;
 }
 .footer-links ul li {
+    font-size: 1.5rem;
     display: flex;
     margin-bottom: 5px;
 }
@@ -300,6 +431,170 @@ footer{
 }
 .footer-links a:hover, .footer-social a:hover{
     text-decoration: underline;
-    color: black;
+    color: rgb(255, 0, 0);
     transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .user-icons {
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 50px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .especialidade-content {
+    padding: 30px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .avaliacoes-lista {
+    flex-direction: column;
+  }
+
+  .cardapio-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto-menu {
+    width: 90%;
+    height: auto;
+  }
+
+  .main-contato {
+    padding: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+
+  .footer-links ul li {
+    justify-content: center;
+  }
+
+  .footer-links a, .footer-social a {
+    padding: 10px;
+  }
+
+  /* SOBRE */
+  .main-sobre {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
+  .main-sobre h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .imagem-prato img {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .texto-sobre {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
+
+  .texto-sobre p {
+    margin-bottom: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .especialidade-content h1,
+  .avaliacoes h2,
+  .avaliacoes-pagina h1 {
+    font-size: 1.4rem;
+  }
+
+  .menu-previa,
+  .produto-menu {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .texto-sobre {
+    font-size: 0.95em;
+  }
+
+  .main-sobre h1 {
+    font-size: 1.6em;
+  }
+
+  .botton,
+  .produto-menu button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .footer-contact img {
+    width: 35px;
+  }
+
+  .footer-links ul li {
+    font-size: 1.2rem;
+  }
+
+  .footer-social a {
+    font-size: 18px;
+  }
 }
